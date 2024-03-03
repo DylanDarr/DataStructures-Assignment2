@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -23,10 +24,10 @@ public:
 	LinkedList();
 	
 	//Add node to front of the list
-	void push_front(string&);
+	void push_front(string);
 
 	//Add node to back of the list
-	void push_back(string&);
+	void push_back(string);
 
 	//Remove node from front of the list
 	void pop_front();
@@ -44,12 +45,15 @@ public:
 	bool isEmpty();
 
 	//Insert item at the specified index
-	void insert(int index, string& item);
+	void insert(int index, string item);
 
 	//Remove item at the specified index
 	bool remove(int index);
 
 	//Return index of specified item in list (return -1 if not present in the list)
-	int find(string& item);
+	int find(string item);
+
+	//Displays the list to the console
+	void display();
 
 };
